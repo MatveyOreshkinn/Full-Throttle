@@ -7,6 +7,7 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
+        // Вот эта строчка двигает монету вниз!
         transform.position += Vector3.down * scrollSpeed * Time.deltaTime;
 
         if (transform.position.y < destroyY)
@@ -17,8 +18,8 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (ScoreManager.instance != null)
-                ScoreManager.instance.AddCoin();
+            if (CoinManager.instance != null)
+                CoinManager.instance.AddCoin();
             Destroy(gameObject);
         }
     }

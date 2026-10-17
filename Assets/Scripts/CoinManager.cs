@@ -1,9 +1,9 @@
 using UnityEngine;
 using TMPro;   
 
-public class ScoreManager : MonoBehaviour
+public class CoinManager : MonoBehaviour
 {
-    public static ScoreManager instance;
+    public static CoinManager instance;
     public TMP_Text coinText;   
 
     private int coins = 0;
