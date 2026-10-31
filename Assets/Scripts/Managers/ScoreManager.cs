@@ -19,8 +19,7 @@ public class ScoreManager : MonoBehaviour
 
         if (scoreText != null)
         {
-            string multiplierText = currentMultiplier > 1f ? " (x2)" : "";
-            scoreText.text = "Счёт: " + Mathf.FloorToInt(currentScore) + multiplierText;
+            scoreText.text = "Счёт: " + Mathf.FloorToInt(currentScore);
         }
     }
 
